@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "baseView.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong) UIView* baseView;
 
 @end
 
@@ -16,7 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _baseView=[[baseView alloc] initWithFrame:CGRectMake(0, 250, self.view.bounds.size.width, self.view.bounds.size.width)];
+    
+    self.view.backgroundColor=[UIColor grayColor];
+    [self.view addSubview:_baseView];
 }
 
 - (void)didReceiveMemoryWarning {
