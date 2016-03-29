@@ -8,10 +8,15 @@
 
 #import "ViewController.h"
 #import "baseView.h"
+#import "codeStore.h"
+#import "setCodeViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIAlertViewDelegate>
 
 @property(nonatomic,strong) UIView* baseView;
+- (IBAction)setTheCode:(id)sender;
+- (IBAction)verifyTheCode:(id)sender;
+- (IBAction)modifyCode:(id)sender;
 
 @end
 
@@ -20,10 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _baseView=[[baseView alloc] initWithFrame:CGRectMake(0, 250, self.view.bounds.size.width, self.view.bounds.size.width)];
+    _setCodeViewController=[[setCodeViewController alloc] init];
+    _verifyCodeViewController=[[verifyCodeViewController alloc] init];
+    _modifyCodeViewController=[[modifyCodeViewController alloc] init];
     
-    self.view.backgroundColor=[UIColor grayColor];
-    [self.view addSubview:_baseView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,4 +36,69 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)setTheCode:(id)sender {
+    
+    if ([[codeStore sharedStore] hasCode]) {
+        
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:@"alert" message:@"already has code" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
+    
+    [self.navigationController pushViewController:_setCodeViewController animated:YES];
+}
+
+- (IBAction)verifyTheCode:(id)sender {
+    
+    codeStore* store=[codeStore sharedStore];
+    
+    if (![store hasCode]) {
+        
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:@"alert" message:@"has NO code" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+        
+        [alert show];
+        
+        return;
+    };
+    
+    [self.navigationController pushViewController:_verifyCodeViewController animated:YES];
+    
+}
+
+- (IBAction)modifyCode:(id)sender {
+    
+    codeStore*store=[codeStore sharedStore];
+    
+    if (![store hasCode]) {
+        
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:@"alert" message:@"please set code frist" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        
+        [alert show];
+        return;
+    }
+    [self.navigationController pushViewController:_modifyCodeViewController animated:YES];
+}
+
+-(instancetype)init
+{
+    self=[super init];
+    return self;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

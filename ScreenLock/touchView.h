@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "touchLine.h"
 
+@protocol touchEnded <NSObject>
+
+@required
+
+-(void) touchEnded;
+
+@end
+
 @interface touchView : UIView
 {
+    NSString* code;
     CGPoint currentPoint;
     CGRect currentRect;
     BOOL selected;
@@ -21,5 +30,8 @@
 @property(nonatomic,strong) NSArray* rects;
 @property(nonatomic,strong) touchLine* currentLine;
 @property(nonatomic) CGFloat radius;
+@property(nonatomic,strong) id<touchEnded> delegate;
+
+-(NSString*) theCode;
 
 @end

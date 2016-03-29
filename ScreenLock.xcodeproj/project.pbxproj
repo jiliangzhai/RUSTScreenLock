@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3E83CF1B7986D200084719 /* codeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83CE1B7986D200084719 /* codeStore.m */; };
+		DE3E83D21B79A3B500084719 /* setCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83D11B79A3B500084719 /* setCodeViewController.m */; };
+		DE3E83D51B79A3C600084719 /* verifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */; };
 		DE53DC1D1B704DEF005C3D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC1C1B704DEF005C3D07 /* main.m */; };
 		DE53DC201B704DEF005C3D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC1F1B704DEF005C3D07 /* AppDelegate.m */; };
 		DE53DC231B704DEF005C3D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC221B704DEF005C3D07 /* ViewController.m */; };
@@ -17,6 +20,7 @@
 		DE53DC431B704E38005C3D07 /* baseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC421B704E38005C3D07 /* baseView.m */; };
 		DE53DC461B70608D005C3D07 /* touchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC451B70608D005C3D07 /* touchView.m */; };
 		DE53DC491B70672F005C3D07 /* touchLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC481B70672F005C3D07 /* touchLine.m */; };
+		DEBEE0471B79DBA900235AE4 /* modifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE3E83CD1B7986D200084719 /* codeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeStore.h; sourceTree = "<group>"; };
+		DE3E83CE1B7986D200084719 /* codeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = codeStore.m; sourceTree = "<group>"; };
+		DE3E83D01B79A3B500084719 /* setCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setCodeViewController.h; sourceTree = "<group>"; };
+		DE3E83D11B79A3B500084719 /* setCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setCodeViewController.m; sourceTree = "<group>"; };
+		DE3E83D31B79A3C600084719 /* verifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = verifyCodeViewController.h; sourceTree = "<group>"; };
+		DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = verifyCodeViewController.m; sourceTree = "<group>"; };
 		DE53DC171B704DEF005C3D07 /* ScreenLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE53DC1B1B704DEF005C3D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE53DC1C1B704DEF005C3D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		DE53DC451B70608D005C3D07 /* touchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchView.m; sourceTree = "<group>"; };
 		DE53DC471B70672F005C3D07 /* touchLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchLine.h; sourceTree = "<group>"; };
 		DE53DC481B70672F005C3D07 /* touchLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchLine.m; sourceTree = "<group>"; };
+		DEBEE0451B79DBA900235AE4 /* modifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modifyCodeViewController.h; sourceTree = "<group>"; };
+		DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modifyCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,14 @@
 				DE53DC451B70608D005C3D07 /* touchView.m */,
 				DE53DC471B70672F005C3D07 /* touchLine.h */,
 				DE53DC481B70672F005C3D07 /* touchLine.m */,
+				DE3E83CD1B7986D200084719 /* codeStore.h */,
+				DE3E83CE1B7986D200084719 /* codeStore.m */,
+				DE3E83D01B79A3B500084719 /* setCodeViewController.h */,
+				DE3E83D11B79A3B500084719 /* setCodeViewController.m */,
+				DE3E83D31B79A3C600084719 /* verifyCodeViewController.h */,
+				DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */,
+				DEBEE0451B79DBA900235AE4 /* modifyCodeViewController.h */,
+				DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */,
 			);
 			name = LockView;
 			sourceTree = "<group>";
@@ -186,7 +206,7 @@
 		DE53DC0F1B704DEF005C3D07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = rust_33;
 				TargetAttributes = {
 					DE53DC161B704DEF005C3D07 = {
@@ -242,12 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3E83D21B79A3B500084719 /* setCodeViewController.m in Sources */,
+				DE3E83D51B79A3C600084719 /* verifyCodeViewController.m in Sources */,
 				DE53DC461B70608D005C3D07 /* touchView.m in Sources */,
 				DE53DC491B70672F005C3D07 /* touchLine.m in Sources */,
+				DE3E83CF1B7986D200084719 /* codeStore.m in Sources */,
 				DE53DC231B704DEF005C3D07 /* ViewController.m in Sources */,
 				DE53DC201B704DEF005C3D07 /* AppDelegate.m in Sources */,
 				DE53DC1D1B704DEF005C3D07 /* main.m in Sources */,
 				DE53DC431B704E38005C3D07 /* baseView.m in Sources */,
+				DEBEE0471B79DBA900235AE4 /* modifyCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +333,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -370,7 +395,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScreenLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AGC.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -380,7 +407,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScreenLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AGC.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -399,6 +428,7 @@
 				);
 				INFOPLIST_FILE = ScreenLockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AGC.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenLock.app/ScreenLock";
 			};
@@ -414,6 +444,7 @@
 				);
 				INFOPLIST_FILE = ScreenLockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AGC.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenLock.app/ScreenLock";
 			};
@@ -438,6 +469,7 @@
 				DE53DC3C1B704DEF005C3D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE53DC3D1B704DEF005C3D07 /* Build configuration list for PBXNativeTarget "ScreenLockTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +478,7 @@
 				DE53DC3F1B704DEF005C3D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

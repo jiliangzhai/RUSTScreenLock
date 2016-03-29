@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "setCodeViewController.h"
+#import "verifyCodeViewController.h"
+#import "modifyCodeViewController.h"
 
 @interface ViewController : UIViewController
 
+@property(nonatomic,strong) setCodeViewController* setCodeViewController;
+@property(nonatomic,strong) verifyCodeViewController* verifyCodeViewController;
+@property(nonatomic,strong) modifyCodeViewController* modifyCodeViewController;
 
 @end
 
