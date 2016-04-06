@@ -13,7 +13,7 @@
 
 @required
 
--(void) touchEnded;
+-(void) touchEndedWithCode:(NSString *)code;
 
 @end
 
@@ -31,7 +31,5 @@
 @property(nonatomic,strong) touchLine* currentLine;
 @property(nonatomic) CGFloat radius;
 @property(nonatomic,strong) id<touchEnded> delegate;
-
--(NSString*) theCode;
 
 @end

@@ -9,18 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "touchView.h"
 
-typedef NS_ENUM(NSUInteger, operation) {
+enum operation
+{
     set,
     verify,
     modify
 };
 
 @interface baseView : UIView
+{
+    CGFloat radius;
+}
 
 @property(nonatomic,strong) NSMutableArray* rects;
 @property(nonatomic) enum operation operation;
 @property(nonatomic,strong) touchView* touchView;
 
--(NSString*) theCode;
 
 @end

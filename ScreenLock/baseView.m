@@ -8,12 +8,6 @@
 
 #import "baseView.h"
 
-@interface baseView ()
-{
-    CGFloat radius;
-}
-
-@end
 
 @implementation baseView
 
@@ -28,7 +22,6 @@
         
         _rects=[[NSMutableArray alloc] init];
         
-        //确定九个rect的位置，为后面绘制底层图案做准备。
         for (int i=0; i<9; i++) {
             
             int shang=i/3;
@@ -42,7 +35,6 @@
         }
     }
     
-    //touchView作为绘制层，baseView作为底层，两层构成底层白底高亮绿色效果。
     _touchView=[[touchView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
     _touchView.radius=radius;
     _touchView.rects=[_rects copy];
@@ -51,42 +43,47 @@
     return self;
 }
 
-//绘制底层白圈
+
 -(void) drawRect:(CGRect)rect
 {
-    UIBezierPath* path=[[UIBezierPath alloc] init];
+    UIBezierPath* path1=[[UIBezierPath alloc] init];
     
     for (int i=0; i<9; i++) {
         
         NSValue* value=_rects[i];
         CGRect rect=[value CGRectValue];
         
-        //里外两层圈，用不同的线宽
-        [path moveToPoint:CGPointMake(rect.origin.x+2*radius, rect.origin.y+radius)];
+        [path1 moveToPoint:CGPointMake(rect.origin.x+2*radius, rect.origin.y+radius)];
         
-        [path addArcWithCenter:CGPointMake(rect.origin.x+radius, rect.origin.y+radius) radius:radius startAngle:0
+        [path1 addArcWithCenter:CGPointMake(rect.origin.x+radius, rect.origin.y+radius) radius:radius startAngle:0
                       endAngle:M_PI*2 clockwise:YES];
         
-        [path moveToPoint:CGPointMake(rect.origin.x+radius+3, rect.origin.y+radius)];
-        [path addArcWithCenter:CGPointMake(rect.origin.x+radius, rect.origin.y+radius) radius:3 startAngle:0
+        [path1 moveToPoint:CGPointMake(rect.origin.x+radius+3, rect.origin.y+radius)];
+        [path1 addArcWithCenter:CGPointMake(rect.origin.x+radius, rect.origin.y+radius) radius:3 startAngle:0
                       endAngle:M_PI*2 clockwise:YES];
     }
     
     [[UIColor whiteColor] setStroke];
-    path.lineWidth=6.0;
+    path1.lineWidth=4.0;
     
-    [path stroke];
-}
-
-
--(NSString*) theCode
-{
-    if (self.operation!=set) {
+    [path1 stroke];
+    
+    UIBezierPath* path2=[[UIBezierPath alloc] init];
+    for (int i=0; i<9; i++) {
         
-        return [[_touchView theCode] copy];
+        NSValue* value=_rects[i];
+        CGRect rect=[value CGRectValue];
+        
+        [path2 moveToPoint:CGPointMake(rect.origin.x+radius+3, rect.origin.y+radius)];
+        [path2 addArcWithCenter:CGPointMake(rect.origin.x+radius, rect.origin.y+radius) radius:3 startAngle:0
+                      endAngle:M_PI*2 clockwise:YES];
     }
-    return nil;
+    
+    path2.lineWidth=6.0;
+    
+    [path2 stroke];
 }
+
 @end
 
 

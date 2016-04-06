@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE3E83CF1B7986D200084719 /* codeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83CE1B7986D200084719 /* codeStore.m */; };
-		DE3E83D21B79A3B500084719 /* setCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83D11B79A3B500084719 /* setCodeViewController.m */; };
-		DE3E83D51B79A3C600084719 /* verifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */; };
 		DE53DC1D1B704DEF005C3D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC1C1B704DEF005C3D07 /* main.m */; };
 		DE53DC201B704DEF005C3D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC1F1B704DEF005C3D07 /* AppDelegate.m */; };
 		DE53DC231B704DEF005C3D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC221B704DEF005C3D07 /* ViewController.m */; };
@@ -17,10 +14,13 @@
 		DE53DC281B704DEF005C3D07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE53DC271B704DEF005C3D07 /* Images.xcassets */; };
 		DE53DC2B1B704DEF005C3D07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE53DC291B704DEF005C3D07 /* LaunchScreen.xib */; };
 		DE53DC371B704DEF005C3D07 /* ScreenLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC361B704DEF005C3D07 /* ScreenLockTests.m */; };
-		DE53DC431B704E38005C3D07 /* baseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC421B704E38005C3D07 /* baseView.m */; };
-		DE53DC461B70608D005C3D07 /* touchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC451B70608D005C3D07 /* touchView.m */; };
-		DE53DC491B70672F005C3D07 /* touchLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DE53DC481B70672F005C3D07 /* touchLine.m */; };
-		DEBEE0471B79DBA900235AE4 /* modifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */; };
+		DEAD41C61CB49DA10065FFDE /* baseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41C51CB49DA10065FFDE /* baseView.m */; };
+		DEAD41CB1CB49DB70065FFDE /* touchLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41C81CB49DB70065FFDE /* touchLine.m */; };
+		DEAD41CC1CB49DB70065FFDE /* touchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41CA1CB49DB70065FFDE /* touchView.m */; };
+		DEAD41D11CB49DD10065FFDE /* MyKeyChainService.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41CE1CB49DD10065FFDE /* MyKeyChainService.m */; };
+		DEAD41D21CB49DD10065FFDE /* MyLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41D01CB49DD10065FFDE /* MyLoginController.m */; };
+		DEAD41D71CB49DF60065FFDE /* MyPassworeSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41D41CB49DF60065FFDE /* MyPassworeSettingController.m */; };
+		DEAD41D81CB49DF60065FFDE /* MySecretManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD41D61CB49DF60065FFDE /* MySecretManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE3E83CD1B7986D200084719 /* codeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeStore.h; sourceTree = "<group>"; };
-		DE3E83CE1B7986D200084719 /* codeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = codeStore.m; sourceTree = "<group>"; };
-		DE3E83D01B79A3B500084719 /* setCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setCodeViewController.h; sourceTree = "<group>"; };
-		DE3E83D11B79A3B500084719 /* setCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setCodeViewController.m; sourceTree = "<group>"; };
-		DE3E83D31B79A3C600084719 /* verifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = verifyCodeViewController.h; sourceTree = "<group>"; };
-		DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = verifyCodeViewController.m; sourceTree = "<group>"; };
 		DE53DC171B704DEF005C3D07 /* ScreenLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE53DC1B1B704DEF005C3D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE53DC1C1B704DEF005C3D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,14 +47,20 @@
 		DE53DC301B704DEF005C3D07 /* ScreenLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE53DC351B704DEF005C3D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE53DC361B704DEF005C3D07 /* ScreenLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenLockTests.m; sourceTree = "<group>"; };
-		DE53DC411B704E38005C3D07 /* baseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseView.h; sourceTree = "<group>"; };
-		DE53DC421B704E38005C3D07 /* baseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseView.m; sourceTree = "<group>"; };
-		DE53DC441B70608D005C3D07 /* touchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchView.h; sourceTree = "<group>"; };
-		DE53DC451B70608D005C3D07 /* touchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchView.m; sourceTree = "<group>"; };
-		DE53DC471B70672F005C3D07 /* touchLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchLine.h; sourceTree = "<group>"; };
-		DE53DC481B70672F005C3D07 /* touchLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchLine.m; sourceTree = "<group>"; };
-		DEBEE0451B79DBA900235AE4 /* modifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modifyCodeViewController.h; sourceTree = "<group>"; };
-		DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modifyCodeViewController.m; sourceTree = "<group>"; };
+		DEAD41C41CB49DA10065FFDE /* baseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseView.h; sourceTree = "<group>"; };
+		DEAD41C51CB49DA10065FFDE /* baseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseView.m; sourceTree = "<group>"; };
+		DEAD41C71CB49DB70065FFDE /* touchLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchLine.h; sourceTree = "<group>"; };
+		DEAD41C81CB49DB70065FFDE /* touchLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchLine.m; sourceTree = "<group>"; };
+		DEAD41C91CB49DB70065FFDE /* touchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchView.h; sourceTree = "<group>"; };
+		DEAD41CA1CB49DB70065FFDE /* touchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchView.m; sourceTree = "<group>"; };
+		DEAD41CD1CB49DD10065FFDE /* MyKeyChainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeyChainService.h; sourceTree = "<group>"; };
+		DEAD41CE1CB49DD10065FFDE /* MyKeyChainService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeyChainService.m; sourceTree = "<group>"; };
+		DEAD41CF1CB49DD10065FFDE /* MyLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginController.h; sourceTree = "<group>"; };
+		DEAD41D01CB49DD10065FFDE /* MyLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginController.m; sourceTree = "<group>"; };
+		DEAD41D31CB49DF60065FFDE /* MyPassworeSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPassworeSettingController.h; sourceTree = "<group>"; };
+		DEAD41D41CB49DF60065FFDE /* MyPassworeSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPassworeSettingController.m; sourceTree = "<group>"; };
+		DEAD41D51CB49DF60065FFDE /* MySecretManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySecretManager.h; sourceTree = "<group>"; };
+		DEAD41D61CB49DF60065FFDE /* MySecretManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySecretManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +102,16 @@
 		DE53DC191B704DEF005C3D07 /* ScreenLock */ = {
 			isa = PBXGroup;
 			children = (
+				DEAD41D91CB49DFD0065FFDE /* secretManager */,
 				DE53DC401B704E08005C3D07 /* LockView */,
 				DE53DC1E1B704DEF005C3D07 /* AppDelegate.h */,
 				DE53DC1F1B704DEF005C3D07 /* AppDelegate.m */,
 				DE53DC211B704DEF005C3D07 /* ViewController.h */,
 				DE53DC221B704DEF005C3D07 /* ViewController.m */,
+				DEAD41D31CB49DF60065FFDE /* MyPassworeSettingController.h */,
+				DEAD41D41CB49DF60065FFDE /* MyPassworeSettingController.m */,
+				DEAD41CF1CB49DD10065FFDE /* MyLoginController.h */,
+				DEAD41D01CB49DD10065FFDE /* MyLoginController.m */,
 				DE53DC241B704DEF005C3D07 /* Main.storyboard */,
 				DE53DC271B704DEF005C3D07 /* Images.xcassets */,
 				DE53DC291B704DEF005C3D07 /* LaunchScreen.xib */,
@@ -144,22 +149,25 @@
 		DE53DC401B704E08005C3D07 /* LockView */ = {
 			isa = PBXGroup;
 			children = (
-				DE53DC411B704E38005C3D07 /* baseView.h */,
-				DE53DC421B704E38005C3D07 /* baseView.m */,
-				DE53DC441B70608D005C3D07 /* touchView.h */,
-				DE53DC451B70608D005C3D07 /* touchView.m */,
-				DE53DC471B70672F005C3D07 /* touchLine.h */,
-				DE53DC481B70672F005C3D07 /* touchLine.m */,
-				DE3E83CD1B7986D200084719 /* codeStore.h */,
-				DE3E83CE1B7986D200084719 /* codeStore.m */,
-				DE3E83D01B79A3B500084719 /* setCodeViewController.h */,
-				DE3E83D11B79A3B500084719 /* setCodeViewController.m */,
-				DE3E83D31B79A3C600084719 /* verifyCodeViewController.h */,
-				DE3E83D41B79A3C600084719 /* verifyCodeViewController.m */,
-				DEBEE0451B79DBA900235AE4 /* modifyCodeViewController.h */,
-				DEBEE0461B79DBA900235AE4 /* modifyCodeViewController.m */,
+				DEAD41C71CB49DB70065FFDE /* touchLine.h */,
+				DEAD41C81CB49DB70065FFDE /* touchLine.m */,
+				DEAD41C91CB49DB70065FFDE /* touchView.h */,
+				DEAD41CA1CB49DB70065FFDE /* touchView.m */,
+				DEAD41C41CB49DA10065FFDE /* baseView.h */,
+				DEAD41C51CB49DA10065FFDE /* baseView.m */,
 			);
 			name = LockView;
+			sourceTree = "<group>";
+		};
+		DEAD41D91CB49DFD0065FFDE /* secretManager */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD41D51CB49DF60065FFDE /* MySecretManager.h */,
+				DEAD41D61CB49DF60065FFDE /* MySecretManager.m */,
+				DEAD41CD1CB49DD10065FFDE /* MyKeyChainService.h */,
+				DEAD41CE1CB49DD10065FFDE /* MyKeyChainService.m */,
+			);
+			name = secretManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,16 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3E83D21B79A3B500084719 /* setCodeViewController.m in Sources */,
-				DE3E83D51B79A3C600084719 /* verifyCodeViewController.m in Sources */,
-				DE53DC461B70608D005C3D07 /* touchView.m in Sources */,
-				DE53DC491B70672F005C3D07 /* touchLine.m in Sources */,
-				DE3E83CF1B7986D200084719 /* codeStore.m in Sources */,
+				DEAD41CB1CB49DB70065FFDE /* touchLine.m in Sources */,
+				DEAD41D21CB49DD10065FFDE /* MyLoginController.m in Sources */,
 				DE53DC231B704DEF005C3D07 /* ViewController.m in Sources */,
+				DEAD41D71CB49DF60065FFDE /* MyPassworeSettingController.m in Sources */,
 				DE53DC201B704DEF005C3D07 /* AppDelegate.m in Sources */,
 				DE53DC1D1B704DEF005C3D07 /* main.m in Sources */,
-				DE53DC431B704E38005C3D07 /* baseView.m in Sources */,
-				DEBEE0471B79DBA900235AE4 /* modifyCodeViewController.m in Sources */,
+				DEAD41CC1CB49DB70065FFDE /* touchView.m in Sources */,
+				DEAD41D11CB49DD10065FFDE /* MyKeyChainService.m in Sources */,
+				DEAD41C61CB49DA10065FFDE /* baseView.m in Sources */,
+				DEAD41D81CB49DF60065FFDE /* MySecretManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

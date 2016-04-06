@@ -8,7 +8,6 @@
 
 #import "touchView.h"
 #import "touchLine.h"
-#import "codeStore.h"
 
 @implementation touchView
 
@@ -49,7 +48,6 @@
     }
     [self setNeedsDisplay];
 }
-
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -100,8 +98,8 @@
                 return;
             }
             _currentLine.end=currentPoint;
-        }
     }
+}
     [self setNeedsDisplay];
 }
 
@@ -117,24 +115,20 @@
             
             code=[code stringByAppendingString:[NSString stringWithFormat:@"%li",i]];
         }
-       
-        codeStore* store=[codeStore sharedStore];
-        if (![store hasCode]) {
-            
-            [store setCode:code];
-        }
-        
-        [self.delegate touchEnded];
     }
     
     _currentLine.end=_currentLine.begin;
     [_lines removeAllObjects];
     [_circles removeAllObjects];
     selected=NO;
-    
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*0.5), dispatch_get_main_queue(), ^{
         [self setNeedsDisplay];
     });
+    
+    if (![code isEqualToString:@""]) {
+        [self.delegate touchEndedWithCode:code];
+    }
 }
 
 
@@ -166,7 +160,6 @@
     [path stroke];
 }
 
-
 -(void)drawRect:(CGRect)rect
 {
     if (selected) {
@@ -185,12 +178,5 @@
         }
     }
 }
-
--(NSString*) theCode
-{
-    return [code copy];
-    
-}
-
 @end
 
