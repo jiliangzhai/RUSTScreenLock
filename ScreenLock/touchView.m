@@ -106,9 +106,6 @@
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (selected) {
-        
-        code=@"";
-        
         for (NSValue* value in _circles) {
             
             NSInteger i=[_rects indexOfObject:value];
@@ -129,6 +126,7 @@
     if (![code isEqualToString:@""]) {
         [self.delegate touchEndedWithCode:code];
     }
+    code = @"";
 }
 
 
